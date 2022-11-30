@@ -30,14 +30,14 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a href="{% url 'logout' %}" class="nav-link">Log Out</a>
+                        <a href="{% url 'account_logout' %}" class="nav-link">Log Out</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a href="{% url 'login' %}" class="nav-link">Log In</a>
+                        <a href="{% url 'account_login' %}" class="nav-link">Log In</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'signup' %}" class="nav-link">Sign Up</a>
+                        <a href="{% url 'account_signup' %}" class="nav-link">Sign Up</a>
                     </li>
                     {% endif %}
                 </ul>
